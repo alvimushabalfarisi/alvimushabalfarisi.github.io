@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+crossorigin="anonymous">
+<!-- JQuery Link -->
+
+<script type="text/javascript" src="assets/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+<!-- LInk CSS -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Kenawa</title>
+<script type="text/javascript">
+$(function(){
+$("#dialogku").dialog({
+autoOpen:false,
+show:'blind',
+hide:'explode'
+
+});
+$('#dibuka').click(function(){
+$('#dialogku').dialog('open');
+return false;
+});
+});
+</script>
+</head>
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+      <div class="container">
+      <img src="image/island.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><h2>Kenawa</h2></a>
+          <ul class="navbar-nav ms-auto">
+
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="objek_wisata.html">Objek Wisata</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sarana_akomodasi.html">Sarana Akomodasi</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="wawasan.html">Wawasan</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">Account</a>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-primary" type="submit">Cari</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar -->
+
+    <!-- jumbotron -->
+  <section class="jumbotron">
+      <h1 class="display-4"><b>Hamparan Padang Savannah</b></h1>
+      <hr class="my-5" />
+
+      <p class="lead">
+        Pulau Kenawa terletak di ujung barat Pulau Sumbawa. Pulau Sumbawa sendiri memang tidak sedemikian dikenal layaknya tetangganya, yaitu Pulau Lombok. Namun potensi wisata yang dimiliki Pulau Sumbawa pun tidak kalah hebat.
+		Bahkan bagi mereka para wisatawan yang telah mengetahuinya, rasanya tidak akan berhenti mengunjungi tempat-tempat lain di Pulau Sumbawa. Untuk urusan pulau-pulau di sekitar Pulau Sumbawa yang indah, tidak perlu ditanyakan lagi. 
+      </p>
+
+        <div class="tombol">
+        <button type="button" class="btn btn-primary btn-lg" id="dibuka">Jelajahi</button>
+        <button type="button" class="btn btn-secondary btn-lg">video</button>
+      </div>
+    </section>
+    
+    <!-- button -->
+
+    <!-- tutupjumbotron -->
+
+    <!-- carausel -->
+
+    <div class="gallery">
+      <h3>Gallery</h3>
+    </div>
+
+    <div class="cara">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/jembatan.jpg " class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/Bukit Kenawa.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+   <!-- Form -->
+   <div id="dialogku">
+<h3>Video Pulau Kenawa</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C2J_ysv3ZWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="container-fluid " style="background-color: #F3F4F5;">
+<p id="objekwisata" class="display-4" style="text-align:center;
+background-color: #F3F4F5;"><b>Objek Wisata</b></p>
+<div class="row">
+
+<div class="col-md-6">
+<h2>Bukit Indah</h2>
+<p class="lead">Di Pulau Kenawa, terdapat sebuah bukit. Anda bisa mendaki bukit satu-satunya
+yang ada di pulau ini dengan soft trekking sekitar 15 menit. Di bukit inilah anda 
+bisa menikmati indahnya matahari terbit dan matahari tenggelam.
+Tapi tetaplah berhati-hati saat mendaki bukit tersebut, sebab selain memiliki 
+kemiringan</p>
+
+
+<a href="#" class="btn btn-primary">Selanjutnya</a><br>
+<h3>Follow Me On The Website</h3>
+<a href="#" class="btn btn-success">Facebook</a>
+<a href="#" class="btn btn-success">Twitter</a>
+<a href="#" class="btn btn-success">Youtube</a>
+</div>
+<div class="col-md-6">
+<figure>
+
+<img src="image/bukit kenawa.jpg" width="100%" class="img-
+fluid">
+
+<figcaption style="text-align:center;"><b>Gambar Bukit Indah </b></figcaption>
+</figure>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-6">
+<figure>
+
+<img src="image/snorkling kenawa.jpg" width="100%" class="img-fluid">
+
+<figcaption style="text-align:center;"><b>Keindahan Bawah Laut Kenawa</b></figcaption>
+
+</figure>
+</div>
+<div class="col-md-6">
+<h2>Keindahan Bawah Laut</h2>
+<p class="lead">Traveler akan disuguhkan pemandangan alam berupa perbukitan, hamparan padang 
+savana, juga birunya air laut pantai. Gradasi warna lautnya cantik, airnya juga bening,
+bersih dan tenang. Banyak hal..</p>
+
+<a href="#" class="btn btn-primary">Selanjutnya</a><br>
+<h3>Follow Me On The Website</h3>
+<a href="#" class="btn btn-success">Facebook</a>
+<a href="#" class="btn btn-success">Twitter</a>
+<a href="#" class="btn btn-success">Youtube</a>
+</div>
+</div>
+<hr>
+<!--card-->
+<div class="container-fluid" style="background-color: #F3F4F5;">
+
+<p id="sarana" class="display-4" style="text-align:center; background-
+color: #F3F4F5;"><b>Sarana dan Akomodasi</b></p>
+
+<div class="row">
+<div class="col-md-4">
+<div class="card" style="width: 23rem;">
+
+<img src="image/dian.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Hotel Dian Sumbawa</h5>
+<p class="card-text">Jl. Hasanuddin No.69, Bugis, Kec. Sumbawa, Kabupaten Sumbawa, Nusa Tenggara Bar. 84313</p>
+<a href="#" class="btn btn-primary">Booking Now</a>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card" style="width: 23rem;">
+
+<img src="image/nihi.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Hotel Nihi Sumba</h5>
+<p class="card-text">Hoba Wawi, Wanokaka, Kabupaten Sumba Barat, Nusa Tenggara Timur</p>
+<a href="#" class="btn btn-primary">Booking Now</a>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card" style="width: 23rem;">
+
+<img src="image/samota.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Hotel Grand Samota</h5>
+<p class="card-text">Unnamed Road, Labuan Sumbawa, Labuhan Badas, Sumbawa Regency, West Nusa Tenggara 84316</p>
+<a href="#" class="btn btn-primary">Booking Now</a>
+</div>
+
+</div>
+</div>
+</div>
+<hr>
+
+<!-- galeri wisatawan-->
+
+<div class="container" style="background-color:#f3f4f5">
+  <p id="wawasan" class="display-4" style="text-align:center;">Galeri Wisatawan</p>
+  <div class="row ui-sortable" id="kotakgeser">
+    <div class="col-md-3 ui-sortable-handle">
+      <figure>
+        <img src="image/o.jpg" class="img-thumbnail">
+        <figcaption>Gambar Pulau Kenawa</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-3 ui-sortable-handle">
+      <figure>
+        <img src="image/asal.jpg" class="img-thumbnail">
+        <figcaption>Gambar Pulau Kenawa</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-3 ui-sortable-handle">
+      <figure>
+        <img src="image/bukit kenawa.jpg" class="img-thumbnail">
+        <figcaption>Gambar Pulau Kenawa</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-3 ui-sortable-handle">
+      <figure>
+        <img src="image/snorkling kenawa.jpg" class="img-thumbnail">
+        <figcaption>Gambar Pulau Kenawa</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row ui-sortable" id="kotakgeser2">
+    <div class="col-md-4 ui-sortable-handle">
+      <figure>
+        <img src="image/jembatan.jpg" class="img-thumbnail">
+        <figcaption>Gambar Pulau Kenawa</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4 ui-sortable-handle">
+      <figure>
+        <img src="image/p.jpg" class="img-thumbnail">
+        <figcaption>Gambar Pulau Kenawa</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4 ui-sortable-handle">
+      <figure>
+        <img src="image/j.jpg" class="img-thumbnail">
+        <figcaption>Gambar Pulau Kenawa</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+<hr>
+
+ <!-- Contact -->
+<div class="container-fluid" style="background-color:#f3f4f5">
+<p class="display-4" style="text-align:center;">Hubungi Kami</p>
+<div class="row">
+<div class="col-md-6">
+<p class="lead"><strong>Google Map Location</strong></p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15784.089673218064!2d116.82235632000089!3d-8.497200729998927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc150896699bc7%3A0xa2cb50263022949e!2sPulau%20Kenawa!5e0!3m2!1sid!2sid!4v1642838288308!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+<div class="col-md-6">
+<form class="row g-3" style="background-color:#8FBC8F">
+<div class="col-md-6">
+
+<label for="namadepan" class="form-label">Nama Depan</label>
+<input type="text" class="form-control" id="namadepan">
+</div>
+<div class="col-md-6">
+<label for="namabelakang" class="form-label">Nama Belakang</label>
+<input type="text" class="form-control" id="namabelakang">
+</div>
+<div class="col-md-6">
+<label for="inputEmail4" class="form-label">Email</label>
+<input type="email" class="form-control" id="inputEmail4">
+</div>
+<div class="col-md-6">
+
+<label for="inputPassword4" class="form-label">Password</label>
+
+<input type="password" class="form-control" id="inputPassword4">
+</div>
+<div class="col-12">
+<label for="telp" class="form-label">No Telp</label>
+<input type="text" class="form-control" id="notelp" >
+</div>
+<div class="col-12">
+
+<label for="inputAddress2" class="form- label">Alamat</label>
+
+<input type="text" class="form-control" id="inputAddress2">
+
+</div>
+<div class="col-md-6">
+
+<label for="inputCity" class="form-label">Kabupaten/Kota</label>
+
+<input type="text" class="form-control" id="inputCity">
+</div>
+<div class="col-md-4">
+<label for="inputState" class="form-label">Desa</label>
+<select id="inputState" class="form-select">
+<option selected>Choose...</option>
+<option>...</option>
+</select>
+</div>
+<div class="col-md-2">
+<label for="inputZip" class="form-label">Zip</label>
+<input type="text" class="form-control" id="inputZip">
+</div>
+<div class="col-12">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="gridCheck">
+<label class="form-check-label" for="gridCheck">Check me out</label>
+</div>
+</div>
+<div class="col-12">
+<button type="submit" class="btn btn-dark btn-lg" >Kirim</button>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+<!-- End Contact -->
+<br>
+<!-- Progressbar -->
+<div class="container" style="background-color:#8FBC8F;">
+<p id="kunjungan" class="display-4" style="text-align:center;
+background-color: #8FBC8F;">Kunjungan Wisatawan</p>
+<div class="progress" >
+<label class="h6">Amerika : </label>
+
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+
+aria-valuemax="100" style="width: 50%">50%</div>
+</div>
+<br>
+<div class="progress">
+<label class="h6">Australia : </label>
+
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+
+aria-valuemax="100" style="width: 70%">70%</div>
+</div>
+<br>
+<div class="progress">
+<label class="h6">China : </label>
+
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+
+aria-valuemax="100" style="width: 30%">30%</div>
+</div>
+<br>
+<div class="progress">
+<label class="h6">Eropa : </label>
+
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+
+aria-valuemax="100" style="width: 45%">45%</div>
+</div>
+<br>
+</div>
+<br>
+</br>
+<!-- End Progressbar -->
+
+<br>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#8FBC8F" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,53.3C384,32,480,32,576,74.7C672,117,768,203,864,202.7C960,203,1056,117,1152,112C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+</svg>
+    <footer class="text-white text-center" style="background-color:#8FBC8F;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-4">
+<p>Copyright @2021 Alvi Mush'ab Alfarisi</p>
+</div>
+<div class="col-md-4">
+<ul style="text-align:left;" class="list-unstyled">
+<li ><a href="#"></a> Beranda</li>
+<li ><a href="#"></a> Objek Wisata</li>
+<li ><a href="#"></a> Sarana dan Akomodasi</li>
+<li ><a href="#"></a> Wawasan</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+    <!-- bootstrap -->
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+</html>
